@@ -12,12 +12,10 @@ export function getThemDir() {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    liveReload([
-      __dirname + '/**/*.php',
-      // __dirname + '/**/*.twig'
-    ]),
+    liveReload([__dirname + '/**/*.php']),
     legacy({
-      targets: ['defaults', 'ie >= 11'],
+      // use default
+      // targets: ['defaults', 'ie >= 11'],
       additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
       polyfills: [],
       modernPolyfills: [],
@@ -33,7 +31,8 @@ export default defineConfig({
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     manifest: true,
-    target: 'es6',
+    // override by legacy plugin
+    // target: 'es6',
     rollupOptions: {
       input: resolve(__dirname, 'main.js'),
     },

@@ -20,7 +20,7 @@ function setup()
   add_theme_support('responsive-embeds');
 
   // remove template support
-  // add_theme_support('block-templates');
+  add_theme_support('block-templates');
 }
 
 
