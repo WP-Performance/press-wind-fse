@@ -1,3 +1,5 @@
+# For PressWind FSE Version go to [https://github.com/WP-Performance/press-wind/tree/FSE](https://github.com/WP-Performance/press-wind/tree/FSE)
+
 # Press Wind FSE
 
 Minimal boilerplate theme for WordPress with Tailwind CSS and Vite JS for Full Site Editing.
